@@ -17,7 +17,7 @@ public class PlayerRotate : MonoBehaviour {
             {
                 if(Input.GetTouch(0).phase==TouchPhase.Moved)
                 {
-					transform.Rotate(transform.up * Input.GetAxis("Mouse X") * -xSpeed * Time.deltaTime,Space.Self；);
+                    transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * -xSpeed * Time.deltaTime,Space.World);
                 }
             }
         }
